@@ -1,16 +1,16 @@
-h1.instagram, p.blogpost__desc, h1.section-title, h1.banner-title, div.newsletter_info h2, div.best-product__product h2, h2.new-product__name {
+h1.instagram, p.blogpost__desc, h1.section-title, h1.banner-title, div.newsletter_info h2, div.best-product__product h2, h2.new-product__name, h2.product__name {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: bold;
   margin: 0;
 }
 
-div.newsletter_info h2, div.best-product__product h2, h2.new-product__name {
+div.newsletter_info h2, div.best-product__product h2, h2.new-product__name, h2.product__name {
   font-size: 20px;
   color: #4a3944;
 }
 
-div.instagram-title-container p.instagram__desc, div.email__input input, p.blogpost__readmore, div.see-all__container p, p.new_product__desc, h3.banner-subtitle {
+div.instagram-title-container p.instagram__desc, div.email__input input, p.blogpost__readmore, div.see-all__container p, p.new-product__desc, h3.banner-subtitle, p.product__desc {
   font-family: "Prata", serif;
   margin: 0;
   color: #8a6960;
@@ -37,6 +37,133 @@ nav a {
   color: #e2ddd7;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+a.btn__add_cart {
+  font-family: "Open Sans", sans-serif;
+  color: #f3f1ef;
+  background-color: #4a3944;
+  padding: 8px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+div.product__wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+div.product__container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.product__left {
+  width: 90vw;
+}
+
+div.product_image_container {
+  height: 100vw;
+}
+
+div.product_page__carousel {
+  height: 100vw;
+}
+
+div.product_image_container {
+  margin-bottom: 50px;
+  background-color: none;
+  margin-right: 20px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+img.product-image {
+  width: 90vw;
+  height: 100vw;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+ol.flickity-page-dots {
+  top: 40px;
+  bottom: auto;
+}
+ol.flickity-page-dots li {
+  background: #f3f1ef !important;
+}
+
+h2.product__name {
+  color: #4a3944;
+}
+h2.product__name span {
+  color: #8a6960;
+}
+
+div.product_varient__list {
+  display: flex;
+  justify-content: space-around;
+}
+div.product_varient__list img {
+  width: 75px;
+  height: 75px;
+}
+
+h1.instagram, p.blogpost__desc, h1.section-title, h1.banner-title, div.newsletter_info h2, div.best-product__product h2, h2.new-product__name, h2.product__name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+div.newsletter_info h2, div.best-product__product h2, h2.new-product__name, h2.product__name {
+  font-size: 20px;
+  color: #4a3944;
+}
+
+div.instagram-title-container p.instagram__desc, div.email__input input, p.blogpost__readmore, div.see-all__container p, p.new-product__desc, h3.banner-subtitle, p.product__desc {
+  font-family: "Prata", serif;
+  margin: 0;
+  color: #8a6960;
+  font-size: 14px;
+}
+
+div.best-product__product p, p.product__price {
+  font-family: "Open Sans", sans-serif;
+  color: #e2ddd7;
+  font-style: italic;
+  margin: 0;
+  font-size: 13px;
+}
+
+div.instagram-title-container a.instagram__link, a.readmore__link, div.see-all__container a {
+  color: #8a6960;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Prata", serif;
+}
+
+nav a {
+  color: #e2ddd7;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+a.btn__add_cart {
+  font-family: "Open Sans", sans-serif;
+  color: #f3f1ef;
+  background-color: #4a3944;
+  padding: 8px 50px;
+  text-decoration: none;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -160,7 +287,7 @@ a.nav-toggle {
 .nav-collapse ul.nav-small-screen {
   position: fixed;
   bottom: 0px;
-  left: -600px;
+  left: -200px;
   -webkit-transition: 0.75s ease-in-out;
   -moz-transition: 0.75s ease-in-out;
   -o-transition: 0.75s ease-in-out;
@@ -364,6 +491,10 @@ a.new-product__link {
   text-decoration: none;
 }
 
+a.new-product__link:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 div.product-image__bg {
   background: #8a6960;
   display: flex;
@@ -409,7 +540,7 @@ h2.new-product__name {
   color: #e2d1c1;
 }
 
-p.new_product__desc {
+p.new-product__desc {
   color: #f3f1ef;
 }
 

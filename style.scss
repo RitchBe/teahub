@@ -1,53 +1,55 @@
-// COLORS PALETTE =============================================================
-$purple: #4a3944;
-$brown: #8a6960;
-$darkbeige: #ab967b;
-$beige: #e2d1c1;
-$light: #e2ddd7;
-$lighter: #f3f1ef;
-
-%big-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
-}
-
-%product-title {
-  @extend %big-title;
-  font-size: 20px;
-  color: $purple;
-}
-
-%text {
-  font-family: 'Prata', serif;
-  margin: 0;
-  color: $brown;
-  font-size: 14px;
-}
-
-%price-text {
-  font-family: "Open Sans", sans-serif;
-  color: $light;
-  font-style: italic;
-  margin: 0;
-  font-size: 13px;
-}
-
-%links {
-  color: $brown;
-  margin-left: 5px;
-  margin-top: 10px;
-  font-size: 16px;
-  font-family: "Prata", serif;
-}
-
-%navbarLink {
-  color: $light;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-}
+@import 'product-page.scss';
+@import 'constants.scss';
+// // COLORS PALETTE =============================================================
+// $purple: #4a3944;
+// $brown: #8a6960;
+// $darkbeige: #ab967b;
+// $beige: #e2d1c1;
+// $light: #e2ddd7;
+// $lighter: #f3f1ef;
+//
+// %big-title {
+//   font-family: "Open Sans", sans-serif;
+//   font-size: 40px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+//
+// %product-title {
+//   @extend %big-title;
+//   font-size: 20px;
+//   color: $purple;
+// }
+//
+// %text {
+//   font-family: 'Prata', serif;
+//   margin: 0;
+//   color: $brown;
+//   font-size: 14px;
+// }
+//
+// %price-text {
+//   font-family: "Open Sans", sans-serif;
+//   color: $light;
+//   font-style: italic;
+//   margin: 0;
+//   font-size: 13px;
+// }
+//
+// %links {
+//   color: $brown;
+//   margin-left: 5px;
+//   margin-top: 10px;
+//   font-size: 16px;
+//   font-family: "Prata", serif;
+// }
+//
+// %navbarLink {
+//   color: $light;
+//   text-decoration: none;
+//   font-family: 'Open Sans', sans-serif;
+//   font-weight: bold;
+// }
 
 body {
   margin: 0;
@@ -178,7 +180,7 @@ a.nav-toggle {
 .nav-collapse ul.nav-small-screen {
   position: fixed;
   bottom: 0px;
-  left: -600px;
+  left: -200px;
   -webkit-transition: 0.75s ease-in-out;
   -moz-transition: 0.75s ease-in-out;
   -o-transition: 0.75s ease-in-out;
@@ -419,7 +421,9 @@ object.section-title__svg {
 
 a.new-product__link {
   text-decoration: none;
-
+}
+a.new-product__link:not(:last-child) {
+  margin-bottom: 50px;
 }
 div.product-image__bg {
   background: $brown;
@@ -474,7 +478,7 @@ h2.new-product__name {
   color: $beige;
 }
 
-p.new_product__desc {
+p.new-product__desc {
   @extend %text;
   color: $lighter;
 }

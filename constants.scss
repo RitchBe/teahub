@@ -1,0 +1,62 @@
+
+// COLORS PALETTE =============================================================
+$purple: #4a3944;
+$brown: #8a6960;
+$darkbeige: #ab967b;
+$beige: #e2d1c1;
+$light: #e2ddd7;
+$lighter: #f3f1ef;
+
+%big-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+%product-title {
+  @extend %big-title;
+  font-size: 20px;
+  color: $purple;
+}
+
+%text {
+  font-family: 'Prata', serif;
+  margin: 0;
+  color: $brown;
+  font-size: 14px;
+}
+
+%price-text {
+  font-family: "Open Sans", sans-serif;
+  color: $light;
+  font-style: italic;
+  margin: 0;
+  font-size: 13px;
+}
+
+%links {
+  color: $brown;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Prata", serif;
+}
+
+%navbarLink {
+  color: $light;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+%addToCart {
+  font-family: 'Open Sans', sans-serif;
+  color: $lighter;
+  background-color: $purple;
+  padding:8px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}

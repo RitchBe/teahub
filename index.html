@@ -98,7 +98,7 @@
       <!-- PRODUCT -->
 
 
-<a class="new-product__link" href="product.html">
+<!-- <a class="new-product__link" href="product.html"> -->
   <div class="new-product__product">
     <div class="new_product__image" data-aos="fade-up"
               data-aos-duration="700"
@@ -109,7 +109,7 @@
       </div>
       <div class="new-product__info">
         <h2 class="new-product__name">Gaara Jar</h2>
-        <p class="new_product__desc">Text about the jar and how awesome it is</p>
+        <p class="new-product__desc">Text about the jar and how awesome it is</p>
         <p class="product__price">70e</p>
         <object id="newProductSvg1" class="product__svg" type="image/svg+xml" data="assets/floral.svg" stroke="blue">
             </object>
@@ -125,9 +125,9 @@
     </div>
   </div>
 
-</a>
+<!-- </a> -->
 
-<a class="new-product__link" href="product.html">
+<!-- <a class="new-product__link" href="product.html"> -->
       <div class="new-product__product ">
         <div class="new_product__image new-product__product__reverse" data-aos="fade-up"
                   data-aos-duration="700"
@@ -140,7 +140,7 @@
             </div>
           <div class="new-product__info">
             <h2 class="new-product__name">Earthly Cup</h2>
-            <p class="new_product__desc">Text about the jar and how awesome it is</p>
+            <p class="new-product__desc">Text about the jar and how awesome it is</p>
             <p class="product__price">20e</p>
             <object id="newProductSvg2" class="product__svg" type="image/svg+xml" data="assets/star.svg" stroke="blue">
                 </object>
@@ -150,10 +150,10 @@
           </div>
         </div>
       </div>
-    </a>
+    <!-- </a> -->
 
 
-    <a class="new-product__link" href="product.html">
+    <!-- <a class="new-product__link" href="product.html"> -->
       <div class="new-product__product">
         <div class="new_product__image " data-aos="fade-up"
                   data-aos-duration="700"
@@ -165,7 +165,7 @@
                   </div>
           <div class="new-product__info">
             <h2 class="new-product__name">Ocean Set</h2>
-            <p class="new_product__desc">Text about the jar and how awesome it is</p>
+            <p class="new-product__desc">Text about the jar and how awesome it is</p>
             <p class="product__price">80e</p>
             <object id="newProductSvg3" class="product__svg" type="image/svg+xml" data="assets/poulpe.svg" stroke="blue">
                 </object>
@@ -176,7 +176,7 @@
 
         </div>
       </div>
-    </a>
+    <!-- </a> -->
 
     </div>
     <div class="see-all__container">
@@ -408,15 +408,26 @@
   });
 </script>
 
-<style media="screen">
 
-</style>
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 900,
   });
 </script>
-<script src="script.js"></script>
+<script src="script.js">
 
+</script>
+
+<script type="text/javascript">
+whichSlidersIndex();
+checkNavbarColor();
+window.addEventListener('scroll', function(event) {
+  checkNavbarColor();
+});
+window.addEventListener('resize', function(event){
+  whichSlidersIndex();
+});
+
+</script>
 
 </html>
