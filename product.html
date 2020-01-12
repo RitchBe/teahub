@@ -1,120 +1,215 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Gaara Product</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8">
+  <title>Gaara Product</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
-
-    <script src='https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
-    <link rel="stylesheet" href="responsive-nav.css">
-    <script src="responsive-nav.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
-  </head>
-  <body>
+  <script src='https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <nav class="nav-collapse">
-      <ul class="nav-small-screen">
-        <li class="nav-small-screen"><a href="#">Home</a></li>
-        <li class="nav-small-screen"><a href="#">Shop ></a></li>
-        <li class="nav-small-screen"><a href="#">About</a></li>
-        <li class="nav-small-screen"><a href="#">Blog</a></li>
+  <link rel="stylesheet" href="responsive-nav.css">
+  <script src="responsive-nav.js"></script>
+
+
+</head>
+
+<body>
+
+  <nav class="nav-collapse">
+    <ul class="nav-small-screen">
+      <li class="nav-small-screen"><a href="#">Home</a></li>
+      <li class="nav-small-screen"><a href="#">Shop -</a></li>
+      <li class="nav-small-screen"><a href="#">About</a></li>
+      <li class="nav-small-screen"><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="navbar_largescreen navbar__scrolled">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop -</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
       </ul>
-
-      <div class="navbar_largescreen navbar__scrolled">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop ></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </nav>
-
-
-    <div class="toggle-nav__container">
-      <div id="toggleNav">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
     </div>
+  </nav>
 
-    <div class="product__wrapper">
-      <div class="product__container">
-        <div class="product__left">
-          <a href="#" class="back__link">Back to Shop</a>
-          <div class="product_page__carousel">
-            <div class="product_image_container">
-              <img class="product-image" src="assets/gaara-5.jpg" alt="Gaara Image">
 
-            </div>
-            <div class="product_image_container">
-              <img class="product-image" src="assets/gaara-6.png" alt="Gaara image">
+  <div class="toggle-nav__container">
+    <div id="toggleNav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 
-            </div>
-            <div class="product_image_container">
-              <img class="product-image" src="assets/gaara-7.jpg" alt="Gaara image">
+  <div class="product__wrapper">
+    <div class="product__container">
+      <div class="product__left">
+        <!-- <a href="#" class="back__link">Back to Shop</a> -->
+        <div class="product_page__carousel">
+          <div class="product_image_container">
+            <img class="product-image" src="assets/gaara-5.jpg" alt="Gaara Image">
 
-            </div>
-            <div class="product_image_container">
-              <img class="product-image" src="assets/gaara-8.jpg" alt="Gaara image">
+          </div>
+          <div class="product_image_container">
+            <img class="product-image" src="assets/gaara-6.png" alt="Gaara image">
+
+          </div>
+          <div class="product_image_container">
+            <img class="product-image" src="assets/gaara-7.jpg" alt="Gaara image">
+
+          </div>
+          <div class="product_image_container">
+            <img class="product-image" src="assets/gaara-8.jpg" alt="Gaara image">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="product_right">
+        <h2 class="product__name">Gaara Jar <span>-Neutral</span></h2>
+
+        <h3 class="product_varient__title">Color</h3>
+        <div class="product_varient__list">
+            <img src="assets/contenant-gaara.jpg" alt="">
+          <img src="assets/gaara-2.jpg" alt="">
+          <img src="assets/gaara-3.jpg" alt="">
+          <img src="assets/gaara-4.jpg" alt="">
+          <img class="varient__selected" src="assets/gaara-5.jpg" alt="">
+        </div>
+
+        <h3 class="product__price">70e</h3>
+        <div class="btn_buy__container">
+          <a class="btn__buy_now" href="#">Buy it now</a>
+          <a class="btn__add_cart" href="#">Add to cart</a>
+        </div>
+
+
+
+
+
+        <div class="tabs">
+          <div class="tab-2">
+            <label for="tab2-1">Description</label>
+            <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+            <div>
+              <p class="product__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
             </div>
           </div>
-
-        </div>
-
-        <div class="product_right">
-          <h2 class="product__name">Gaara Jar <span>-Neutral</span></h2>
-
-          <h3 class="product_varient__title">Color</h3>
-            <div class="product_varient__list">
-              <img src="assets/contenant-gaara.jpg" alt="">
-              <img src="assets/gaara-2.jpg" alt="">
-              <img src="assets/gaara-3.jpg" alt="">
-              <img src="assets/gaara-4.jpg" alt="">
-              <img src="assets/gaara-5.jpg" alt="">
+          <div class="tab-2">
+            <label for="tab2-2">Shipping</label>
+            <input id="tab2-2" name="tabs-two" type="radio">
+            <div>
+              <p class="product__desc">Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
             </div>
-
-          <h3 class="product__price">70e</h3>
-          <a class="btn__add_cart" href="#">Add to cart</a>
-
-          <p class="product__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-
-
+          </div>
         </div>
+
 
       </div>
+
     </div>
+  </div>
+
+  <div class="recommendation__wrapper">
+
+        <h1 class="recommendation__title">Recommendations</h1>
+        <!-- <object id="newProductSvg" class="section-title__svg section-from-blog__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
+        </object> -->
 
 
 
-    <script>
-      var nav = responsiveNav(".nav-collapse", {
-        label: '',
-        customToggle: '#toggleNav',
-      });
-    </script>
+    <div class="recommendation__carousel">
+      <div class="recommendation__product">
+
+        <img class="new-product__img" src="assets/ceramic-set-5.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/five-triangle.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/travel-set-2.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/travel-nordic-set-6.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/water-cup_result.png" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/nomadic-3.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+      <div class="recommendation__product">
+        <img src="assets/ceramic-set-5.jpg" alt="Ceramic Set">
+        <div class="recommendation__info">
+          <h2>Ceramic Set</h2>
+          <p>30e</p>
+        </div>
+      </div>
+    </div>
+    <div class="see-all__container">
+      <p class="see-all"><a class="link see_all__linkhref" href='#'>Shop all</a></p>
+      <object data="assets/underline_pattern.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
 
 
-    <script src="script.js"></script>
 
-    <script type="text/javascript">
-      whichSlidersProduct();
-    </script>
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      label: '',
+      customToggle: '#toggleNav',
+    });
+  </script>
 
-  </body>
+
+  <script src="script.js"></script>
+
+  <script type="text/javascript">
+    whichSlidersProduct();
+    carouselLargeScreen('.recommendation__carousel', '.recommendation__product img')
+  </script>
+
+</body>
+
 </html>

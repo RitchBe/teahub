@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -19,8 +19,19 @@
   <script src='https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js'></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.2.0/sticky.min.js'></script>
+
   <link rel="stylesheet" href="responsive-nav.css">
   <script src="responsive-nav.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.2/tingle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.15.2/tingle.min.js"></script>
+
+  <script src="pop-it/pop-it-1.0.min.js">
+
+  </script>
+  <link rel="stylesheet" href="pop-it/styles.css">
 
 
 
@@ -31,17 +42,20 @@
 
 <nav class="nav-collapse">
   <ul class="nav-small-screen">
-    <li class="nav-small-screen"><a href="#">Home</a></li>
-    <li class="nav-small-screen"><a href="#">Shop ></a></li>
-    <li class="nav-small-screen"><a href="#">About</a></li>
+    <li class="nav-small-screen is_selected"><a href="#">Home</a></li>
+    <li class="nav-small-screen"><a href="#">Shop -</a></li>
+    <li class="nav-small-screen"><a href="/about.html">About</a></li>
     <li class="nav-small-screen"><a href="#">Blog</a></li>
   </ul>
 
   <div class="navbar_largescreen navbar_invisible">
+    <a href='#'>
+      <img class="insta_nav" src="assets/instagram-logo.svg" alt="Instagram">
+    </a>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Shop ></a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#" class="is_selected">Home</a></li>
+      <li><a href="#">Shop -</a></li>
+      <li><a href="/about.html">About</a></li>
       <li><a href="#">Blog</a></li>
     </ul>
   </div>
@@ -82,107 +96,172 @@
 
   <!-- NEW PRODUCT SECTION ==================================================================================-->
 
-  <section class="new-product">
-    <div id="newProduct" class="new-product__wrapper section__wrapper">
-      <div class="section-title__container" style="">
-        <h1 class="section-title">New <span>Product</span></h1>
-        <!-- <object id="newProductSvg" class="section-title__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
-        </object> -->
-      </div>
+  <section class="new-product" >
+    <div id="newProduct" class="new-product__wrapper section__wrapper" >
+
+      <div class="new_product__container" data-sticky-container>
+        <div class="section-title__container new_product__title" style="" data-sticky-for="800" data-margin-top="85" >
+          <h1 class="section-title">New</h1>
+          <p class="main_text">Nous avons conçu la gamme LAB, une gamme de sérums à forte concentration d'actifs pour régler des problèmes de peau ciblés</p>
+          <!-- <object id="newProductSvg" class="section-title__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
+          </object> -->
+          <!-- <div class="" style="width:30vw;height:100px">
+
+          </div> -->
+          <object id="newProductSvg1" class="product__svg" type="image/svg+xml" data="assets/tea_leaves.svg" stroke="blue">
+              </object>
+              <script>
+          new Vivus('newProductSvg1', { duration: 400, pathTimingFunction: Vivus.EASE, type: 'oneByOne'});
+        </script>
+        </div>
+
+        <div class="new_product__gallery">
+          <!-- PRODUCT -->
+
+            <div class="new-product__product_large">
+              <div class="new-product__image_large" data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-easing="ease"
+                        data-aos-once="false" data-aos-offset="50">
+
+
+                <div class="product-image__bg" data-js="open-u-modal">
+                  <img src="assets/gaara-5.jpg" alt="Gaara Jar">
+                </div>
+                <div class="new-product__info">
+                  <h2 class="new-product__name">Gaara Jar</h2>
+                  <p class="new-product__desc">Text about the jar and how awesome it is</p>
+                  <p class="product__price">70e</p>
+
+
+
+                </div>
+              </div>
+            </div>
+
+          <div class="new_product_grid__container">
+            <div class="new_product_grid">
+            <div class="new_product_small_1 new_product_small" data-aos="fade-up"
+                      data-aos-duration="700"
+                      data-aos-easing="ease"
+                      data-aos-once="false" data-aos-offset="50">
+              <img src="assets/beige-small-pot-2.png" alt="Product">
+              <div class="new-product__info new-product__info_small">
+                <h2 class="new-product__name">Gaara Jar</h2>
+                <p class="product__price">70e</p>
+              </div>
+            </div>
+            <div class="new_product_small_2 new_product_small" data-aos="fade-up"
+                      data-aos-duration="700"
+                      data-aos-easing="ease"
+                      data-aos-once="false" data-aos-offset="100">
+              <img src="assets/flow-4.jpg" alt="">
+              <div class="new-product__info new-product__info_small">
+                <h2 class="new-product__name">Gaara Jar</h2>
+                <p class="product__price">70e</p>
+              </div>
+            </div>
+            <div class="new_product_small_3 new_product_small" data-aos="fade-up"
+                      data-aos-duration="700"
+                      data-aos-easing="ease"
+                      data-aos-once="false" data-aos-offset="150">
+              <img src="assets/rustic-pot-5.jpg" alt="">
+              <div class="new-product__info new-product__info_small">
+                <h2 class="new-product__name">Gaara Jar</h2>
+                <p class="product__price">70e</p>
+              </div>
+            </div>
+            <div class="new_product_small_4 new_product_small" data-aos="fade-up"
+                      data-aos-duration="700"
+                      data-aos-easing="ease"
+                      data-aos-once="false" data-aos-offset="200">
+              <img src="assets/light-bottle-cups-4.jpg" alt="">
+              <div class="new-product__info new-product__info_small">
+                <h2 class="new-product__name">Gaara Jar</h2>
+                <p class="product__price">70e</p>
+              </div>
+             </div>
+            </div>
+          </div>
+
+
+                <div class="new-product__product_large ">
+                  <div class="new-product__image_large" data-aos="fade-up"
+                            data-aos-duration="700"
+                            data-aos-easing="ease"
+                            data-aos-once="false" data-aos-offset="200">
+
+                      <div class="product-image__bg">
+                        <img src="assets/five-triangle.jpg" alt="Earthly Cup">
+
+                      </div>
+                    <div class="new-product__info">
+                      <h2 class="new-product__name">Earthly Cup</h2>
+                      <p class="new-product__desc">Text about the jar and how awesome it is</p>
+                      <p class="product__price">20e</p>
+                      <!-- <object id="newProductSvg2" class="product__svg" type="image/svg+xml" data="assets/star.svg" stroke="blue">
+                          </object>
+                          <script>
+                      new Vivus('newProductSvg2', { duration: 120});
+                    </script> -->
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="new-product__product_large">
+                  <div class="new-product__image_large " data-aos="fade-up"
+                            data-aos-duration="700"
+                            data-aos-easing="ease"
+                            data-aos-once="false" data-aos-offset="50">
+                            <div class="product-image__bg">
+                              <img src="assets/ocean-set-8_result.jpg" alt="Ocean Set">
+
+                            </div>
+                    <div class="new-product__info">
+                      <h2 class="new-product__name">Ocean Set</h2>
+                      <p class="new-product__desc">Text about the jar and how awesome it is</p>
+                      <p class="product__price">80e</p>
+                      <!-- <object id="newProductSvg3" class="product__svg" type="image/svg+xml" data="assets/poulpe.svg" stroke="blue">
+                          </object>
+                          <script>
+                      new Vivus('newProductSvg3', { duration: 120});
+                    </script> -->
+                    </div>
+
+                  </div>
+                </div>
+
+
+            </div>
+
+              </div>
+              <div class="see-all__wrapper">
+                <div class="see-all__container">
+                  <p class="see-all"><a class="link see_all__linkhref" href='#'>Shop all</a></p>
+                  <object data="assets/underline_pattern.svg" type="image/svg+xml"></object>
+                </div>
+              </div>
+
+
+
 
       <!-- <script>
   new Vivus('newProductSvg', { duration: 50 });
 </script> -->
+<script type="text/javascript">
+  var sticky = new Sticky('.new_product__title');
+</script>
 
 
-      <!-- PRODUCT -->
 
-
-<!-- <a class="new-product__link" href="product.html"> -->
-  <div class="new-product__product">
-    <div class="new_product__image" data-aos="fade-up"
-              data-aos-duration="700"
-              data-aos-easing="ease"
-              data-aos-once="false" data-aos-offset="50">
-      <div class="product-image__bg" >
-        <img src="assets/gaara-5.jpg" alt="Gaara Jar">
-      </div>
-      <div class="new-product__info">
-        <h2 class="new-product__name">Gaara Jar</h2>
-        <p class="new-product__desc">Text about the jar and how awesome it is</p>
-        <p class="product__price">70e</p>
-        <object id="newProductSvg1" class="product__svg" type="image/svg+xml" data="assets/floral.svg" stroke="blue">
-            </object>
-            <script>
-        new Vivus('newProductSvg1', { duration: 120});
-      </script>
+</div>
 
 
 
 
-
-      </div>
-    </div>
-  </div>
-
-<!-- </a> -->
-
-<!-- <a class="new-product__link" href="product.html"> -->
-      <div class="new-product__product ">
-        <div class="new_product__image new-product__product__reverse" data-aos="fade-up"
-                  data-aos-duration="700"
-                  data-aos-easing="ease"
-                  data-aos-once="false" data-aos-offset="500">
-
-            <div class="product-image__bg">
-              <img src="assets/earth-cup_result.png" alt="Earthly Cup">
-
-            </div>
-          <div class="new-product__info">
-            <h2 class="new-product__name">Earthly Cup</h2>
-            <p class="new-product__desc">Text about the jar and how awesome it is</p>
-            <p class="product__price">20e</p>
-            <object id="newProductSvg2" class="product__svg" type="image/svg+xml" data="assets/star.svg" stroke="blue">
-                </object>
-                <script>
-            new Vivus('newProductSvg2', { duration: 120});
-          </script>
-          </div>
-        </div>
-      </div>
-    <!-- </a> -->
-
-
-    <!-- <a class="new-product__link" href="product.html"> -->
-      <div class="new-product__product">
-        <div class="new_product__image " data-aos="fade-up"
-                  data-aos-duration="700"
-                  data-aos-easing="ease"
-                  data-aos-once="false" data-aos-offset="50">
-                  <div class="product-image__bg">
-                    <img src="assets/ocean-set-8_result.png" alt="Ocean Set">
-
-                  </div>
-          <div class="new-product__info">
-            <h2 class="new-product__name">Ocean Set</h2>
-            <p class="new-product__desc">Text about the jar and how awesome it is</p>
-            <p class="product__price">80e</p>
-            <object id="newProductSvg3" class="product__svg" type="image/svg+xml" data="assets/poulpe.svg" stroke="blue">
-                </object>
-                <script>
-            new Vivus('newProductSvg3', { duration: 120});
-          </script>
-          </div>
-
-        </div>
-      </div>
-    <!-- </a> -->
-
-    </div>
-    <div class="see-all__container">
-      <p class="see-all"><a class="link see_all__linkhref" href='#'>Shop all</a></p>
-      <object data="assets/underline_pattern.svg" type="image/svg+xml"></object>
-    </div>
 
   </section>
 
@@ -247,7 +326,7 @@
     <div class="best-product__wrapper section__wrapper">
       <div class="section-title__container best-product-container">
         <div class="section-title__container from-blog-title-container" style="">
-          <h1 class="section-title best-product">Best <span>Products</span></h1>
+          <h1 class="section-title best-product">Sellers</h1>
           <!-- <object id="newProductSvg" class="section-title__svg section-from-blog__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
           </object> -->
         </div>
@@ -318,9 +397,9 @@
 
   <!-- NEWS LETTER ================================================================================== -->
   <section class="newsletter" data-aos="slide-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-easing="ease"
-            data-aos-once="false" data-aos-offset="250">
+            data-aos-once="false" data-aos-offset="50">
     <div class="newsletter_wrapper section__wrapper">
       <div class="newsletter_info">
         <h2>Join today and get 10% off your first purchase.</h2>
@@ -339,11 +418,11 @@
     <div class="instagram__container section__wrapper"  data-aos="fade-up"
               data-aos-duration="700"
               data-aos-easing="ease"
-              data-aos-once="false" data-aos-offset="500">
+              data-aos-once="false" data-aos-offset="100">
 
-      <div class="section-title__container instagram-title-container" style="">
+      <div class="section-title__container instagram-title-container new_product__title" style="">
         <h1 class="section-title instagram"><span>Instagram</span></h1>
-        <p class="instagram__desc">Follow us on <a target="_blank" class="instagram__link" href="#">@sipsum</a> to get the latest deals and products.</p>
+        <p class="main_text instagram__desc">Follow us on <a target="_blank" class="instagram__link" href="#">@sipsum</a> to get the latest deals and products.</p>
 
         <!-- <object id="newProductSvg" class="section-title__svg section-from-blog__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
         </object> -->
@@ -387,12 +466,207 @@
 
   </section>
 
+ <button class="button" >Open pop-it</button>
+  <!-- MODAL -->
+<div class="u-modal">
+  <div class="tar">
+      <button class="u-modal-btn" data-js="close-u-modal">X</button>
+  </div>
+    <div class="u-modal-box">
+        <!-- .modal-box--fullscreen -->
+        <!-- <div class="tar">
+            <i class="u-modal-close" data-js="close-u-modal">close here</i>
+        </div>
+        <div class="u-modal-content">
+            <div class="u-modal-column--full u-modal-column--animated" data-effect="slide-up">
+                <h1 class="u-modal-title u-modal-txt--animated">Use this container to place your HTML elements according to your needs</h1>
+                <p class="u-modal-txt u-modal-txt--animated">I'm a text</p>
+                <ul>
+                    <li class="u-modal-txt u-modal-txt--animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, rem, inventore!</li>
+                    <li class="u-modal-txt u-modal-txt--animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, rem, inventore!</li>
+                    <li class="u-modal-txt u-modal-txt--animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, rem, inventore!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tar">
+            <button class="u-modal-btn" data-js="close-u-modal">Understood</button>
+        </div> -->
+
+        <div class="product__wrapper">
+          <div class="product__container">
+
+            <div class="product__left">
+              <!-- <a href="#" class="back__link">Back to Shop</a> -->
+              <div class="product_page__carousel" data-flickity>
+                <div class="product_image_container">
+                  <img class="product-image" src="assets/gaara-5.jpg" alt="Gaara Image">
+
+                </div>
+                <div class="product_image_container">
+                  <img class="product-image" src="assets/gaara-6.png" alt="Gaara image">
+
+                </div>
+                <div class="product_image_container">
+                  <img class="product-image" src="assets/gaara-7.jpg" alt="Gaara image">
+
+                </div>
+                <div class="product_image_container">
+                  <img class="product-image" src="assets/gaara-8.jpg" alt="Gaara image">
+                </div>
+              </div>
+
+              <div class="carousel-nav" data-flickity='{ "asNavFor": ".product_page__carousel", "contain": true, "pageDots": false, "prevNextButtons": false }'>
+                <div class="product_image_container product_image_container__small">
+                  <img class="product-image" src="assets/gaara-5.jpg" alt="Gaara Image">
+
+                </div>
+                <div class="product_image_container product_image_container__small">
+                  <img class="product-image" src="assets/gaara-6.png" alt="Gaara image">
+
+                </div>
+                <div class="product_image_container product_image_container__small">
+                  <img class="product-image" src="assets/gaara-7.jpg" alt="Gaara image">
+
+                </div>
+                <div class="product_image_container product_image_container__small">
+                  <img class="product-image" src="assets/gaara-8.jpg" alt="Gaara image">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="product_right">
+              <h2 class="product__name">Gaara Jar <span>-Neutral</span></h2>
+
+              <h3 class="product_varient__title">Color</h3>
+              <div class="product_varient__list">
+                  <img src="assets/contenant-gaara.jpg" alt="">
+                <img src="assets/gaara-2.jpg" alt="">
+                <img src="assets/gaara-3.jpg" alt="">
+                <img src="assets/gaara-4.jpg" alt="">
+                <img class="varient__selected" src="assets/gaara-5.jpg" alt="">
+              </div>
+
+              <h3 class="product__price">70e</h3>
+              <div class="btn_buy__container">
+                <a class="btn__buy_now" href="#">Buy it now</a>
+                <a class="btn__add_cart" href="#">Add to cart</a>
+              </div>
+
+
+
+
+
+              <div class="tabs">
+                <div class="tab-2">
+                  <label for="tab2-1">Description</label>
+                  <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                  <div>
+                    <p class="product__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+
+                  </div>
+                </div>
+                <div class="tab-2">
+                  <label for="tab2-2">Shipping</label>
+                  <input id="tab2-2" name="tabs-two" type="radio">
+                  <div>
+                    <p class="product__desc">Quisque sit amet turpis leo. Maecenas sed dolor mi. Pellentesque varius elit in neque ornare commodo ac non tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi tristique lorem eget iaculis consectetur. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean at tellus eget risus tempus ultrices. Nam condimentum nisi enim, scelerisque faucibus lectus sodales at.</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="recommendation__wrapper">
+
+              <h1 class="recommendation__title">Recommendations</h1>
+              <!-- <object id="newProductSvg" class="section-title__svg section-from-blog__svg" type="image/svg+xml" data="assets/title_pattern_2.svg" stroke="blue">
+              </object> -->
+
+
+
+          <div class="recommendation__carousel">
+            <div class="recommendation__product">
+
+              <img class="new-product__img" src="assets/ceramic-set-5.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/five-triangle.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/travel-set-2.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/travel-nordic-set-6.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/water-cup_result.png" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/nomadic-3.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+            <div class="recommendation__product">
+              <img src="assets/ceramic-set-5.jpg" alt="Ceramic Set">
+              <div class="recommendation__info">
+                <h2>Ceramic Set</h2>
+                <p>30e</p>
+              </div>
+            </div>
+          </div>
+          <div class="see-all__container see-all__container_modal">
+            <p class="see-all"><a class="link see_all__linkhref" href='#'>Shop all</a></p>
+            <object data="assets/underline_pattern.svg" type="image/svg+xml"></object>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL -->
+
 
 
 
   <script>
     AOS.init();
   </script>
+
+
+<!-- <div class=".u-modal">
+
+
+</div> -->
+
+
+
 </body>
 
 
@@ -421,6 +695,9 @@
 <script type="text/javascript">
 whichSlidersIndex();
 checkNavbarColor();
+whichSlidersProduct();
+  carouselLargeScreen('.recommendation__carousel', '.recommendation__product img')
+
 window.addEventListener('scroll', function(event) {
   checkNavbarColor();
 });
@@ -428,6 +705,15 @@ window.addEventListener('resize', function(event){
   whichSlidersIndex();
 });
 
+var modal = new Popit({
+
+
+        veil: "disabled"
+    });
+
 </script>
+
+
+
 
 </html>

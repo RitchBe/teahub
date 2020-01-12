@@ -1,0 +1,74 @@
+%big-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+%product-title {
+  @extend %big-title;
+  font-size: 20px;
+  color: $purple;
+}
+
+%text {
+  font-family: 'Prata', serif;
+  margin: 0;
+  color: $brown;
+  font-size: 14px;
+}
+
+%price-text {
+  font-family: "Open Sans", sans-serif;
+  color: $light;
+  font-style: italic;
+  margin: 0;
+  font-size: 13px;
+}
+
+
+
+%links {
+  color: $brown;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Prata", serif;
+}
+
+%navbarLink {
+  color: $darkbeige;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+%navbarLink:hover {
+  color: $lighter;
+}
+
+
+%addToCart {
+  font-family: 'Open Sans', sans-serif;
+  color: $lighter;
+  background-color: $purple;
+  padding:15px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+%priceProductPage {
+  font-family: 'Open Sans', sans-serif;
+  color: $purple;
+  font-style: italic;
+  margin: 0;
+}
+
+
+div.navbar_largescreen {
+  .is_selected {
+    color: $lighter;
+  }
+}

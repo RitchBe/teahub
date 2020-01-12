@@ -1,0 +1,49 @@
+// banner
+
+div.banner-img__about {
+  background-image: url('assets/bg_about_2.jpg') !important;
+  // background-image: none !important;
+}
+
+
+div h3.about_info {
+  font-size: 17px;
+  padding: 17px 40px;
+  color: $beige;
+  text-align: center;
+}
+
+div.about_toogle-nav__container {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+@media screen and (min-width: 900px) {
+  div h3.about_info {
+    font-size: 20px;
+    padding: 18px 79px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  div h3.about_info {
+    font-size: 20px;
+    padding: 18px 116px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  div h3.about_info {
+    font-size: 26px;
+    padding: 18px 10vw;
+  }
+}
+
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}

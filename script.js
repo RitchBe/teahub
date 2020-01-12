@@ -40,15 +40,27 @@ function carouselLargeScreen(elem, img) {
 }
 
 function carouselProductPage(elem, img) {
+  console.log('shouldworkd');
   var elem = document.querySelector(elem);
   var flkty = new Flickity( elem, {
   // options
     cellAlign: 'left',
-    contain: true,
+    contain: false,
     wrapAround: true,
   });
 }
 
+function carouselProductPage(elem, img) {
+  console.log('shouldworkd');
+  var elem = document.querySelector(elem);
+  var flkty = new Flickity( elem, {
+  // options
+    cellAlign: 'left',
+    contain: false,
+    wrapAround: true,
+    asNavFor: '.carousel-nav',
+  });
+}
 
 
 function checkNavbarColor() {
@@ -92,10 +104,9 @@ function whichSlidersIndex() {
 }
 
 function whichSlidersProduct() {
-  if (screen1000px.matches) {
-  } else {
-    carouselProductPage('.product_page__carousel', '.product_image_container img');
-  }
+
+    // carouselProductPage('.product_page__carousel', '.product_image_container img');
+
 }
 
 navbarChange();
@@ -135,3 +146,62 @@ window.addEventListener('resize', function(event){
   //      allTitle[0].setAttribute('data', 'assets/waves3.svg')
   //    }
   // }
+
+
+
+//MODAL
+
+
+//   var modal = new tingle.modal({
+//       footer: true,
+//       stickyFooter: false,
+//       closeMethods: ['overlay', 'button', 'escape'],
+//       closeLabel: "Close",
+//       cssClass: ['custom-class-1', 'custom-class-2'],
+//       onOpen: function() {
+//
+//           console.log('modal open');
+//       },
+//       onClose: function() {
+//           console.log('modal closed');
+//       },
+//       beforeClose: function() {
+//           // here's goes some logic
+//           // e.g. save content before closing the modal
+//           return true; // close the modal
+//           return false; // nothing happens
+//       }
+//   });
+//
+//
+// function createModal(info) {
+//   whichSlidersProduct();
+//   carouselLargeScreen('.recommendation__carousel', '.recommendation__product img')
+//   console.log(info)
+//   // set content
+//   modal.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+//
+//
+//   // add a button
+//   // modal.addFooterBtn('Button label', 'tingle-btn tingle-btn--primary', function() {
+//   //     // here goes some logic
+//   //     modal.close();
+//   // });
+//   //
+//   // // add another button
+//   // modal.addFooterBtn('Dangerous action !', 'tingle-btn tingle-btn--danger', function() {
+//   //     // here goes some logic
+//   //     modal.close();
+//   // });
+//
+//   // open modal
+//   modal.open('was up');
+//
+//   // close modal
+//   // modal.close();
+// }
+//
+//
+//
+//
+// document.querySelector('.product-image__bg').addEventListener('click', function() {createModal('wasup')})

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About</title>
+  <link rel="stylesheet" href="responsive-nav.css">
+  <script src="responsive-nav.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav-collapse">
+    <ul class="nav-small-screen">
+      <li class="nav-small-screen"><a href="#">Home</a></li>
+      <li class="nav-small-screen"><a href="#">Shop -</a></li>
+      <li class="nav-small-screen"><a href="#">About</a></li>
+      <li class="nav-small-screen"><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="navbar_largescreen navbar_invisible">
+      <a href='#'>
+        <img class="insta_nav" src="assets/instagram-logo.svg" alt="Instagram">
+      </a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Shop -</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="about_toogle-nav__container toggle-nav__container ">
+    <div id="toggleNav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- BANNER -->
+
+  <section class="home-banner">
+    <div class="banner-img banner-img__about">
+      <!-- <video  poster="assets/bg_about_2.jpg" autoplay="true" loop>
+    <source src="assets/video_banner_2.mp4" type="video/mp4">
+</video> -->
+      <div class="banner-info">
+        <!-- <h1 class="banner-title">Sipsum</h1> -->
+        <h3 class="banner-subtitle about_info">With your help we've made sales in 60 countries worldwide and recently opened our first direct retail store in download Los Angeles.
+        </h3>
+        <h3 class="banner-subtitle about_info">We couldn't have done it without you — keep spreading the word!
+        </h3>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      label: '',
+      customToggle: '#toggleNav',
+    });
+  </script>
+  <script src="script.js">
+  </script>
+  <script type="text/javascript">
+    checkNavbarColor();
+
+    window.addEventListener('scroll', function(event) {
+      checkNavbarColor();
+    });
+  </script>
+
+
+</body>
+
+</html>

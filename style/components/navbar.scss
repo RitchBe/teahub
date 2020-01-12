@@ -1,0 +1,183 @@
+//NAVBAR ======================================================================
+
+div.toggle-nav__container {
+  padding: 5px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: $purple;
+}
+
+#toggleNav {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $light;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+#toggleNav span:nth-child(1) {
+  top: 0;
+}
+
+#toggleNav span:nth-child(2),
+#toggleNav span:nth-child(3) {
+  top: 7px;
+}
+
+#toggleNav span:nth-child(4) {
+  top: 14px;
+}
+
+#toggleNav.active span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+#toggleNav.active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#toggleNav.active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#toggleNav.active span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+a.nav-toggle {
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-collapse ul.nav-small-screen {
+  position: fixed;
+  bottom: 0;
+  left: -600px;
+  -webkit-transition: 0.75s ease-in-out;
+  -moz-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+  background-color: $purple;
+  z-index: 10;
+}
+
+.nav-collapse li.nav-small-screen {
+  margin: 30px;
+  border-bottom: 3px solid $lighter;
+  width: 60vw;
+  padding-bottom: 3px;
+}
+
+nav a {
+  @extend %navbarLink;
+  cursor: pointer;
+}
+
+.opened ul.nav-small-screen {
+  left: 0;
+  -webkit-transition: 0.75s ease-in-out;
+  -moz-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0,75s ease-in-out;
+  padding: 18px 40px !important;
+}
+
+div.navbar {
+  height: 75px;
+  background: $purple;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+div.navbar_largescreen {
+  display: none;
+}
+
+img.insta_nav {
+  width: 30px;
+  margin-left: 50px;
+}
+@media screen and (min-width: 750px) {
+  .nav-collapse ul.nav-small-screen {
+    display: none !important;
+  }
+
+  div.navbar_largescreen {
+    height: 60px;
+    background: rgba(0,0,0,0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+
+    ul {
+      top: 0;
+      height: 60px;
+      display: flex !important;
+      width: 30vw;
+      align-items: center;
+    }
+  }
+
+  div.navbar__scrolled {
+    background: $purple;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+  }
+}
